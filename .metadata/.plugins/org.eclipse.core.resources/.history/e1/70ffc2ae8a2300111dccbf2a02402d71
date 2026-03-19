@@ -1,0 +1,9 @@
+package com.logic.autowire;
+
+import org.apache.tomcat.jni.Address;
+
+public class Emp {
+	
+	private Address address;
+	
+}
