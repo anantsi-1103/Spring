@@ -9,6 +9,7 @@ public class Emp {
 	}
 
 	
+	// by name or by type => 
 	public void setAddress(Address address) {
 		System.out.println("Inside a setter method");
 		this.address = address;

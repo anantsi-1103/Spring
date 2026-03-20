@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 
-//	@Autowired
+	
 	@Autowired
 	@Qualifier("address2")
 	private Address address;
@@ -14,7 +14,6 @@ public class Emp {
 		return address;
 	}
 
-//	@Autowired
 	public void setAddress(Address address) {
 		System.out.println("Inside a setter method");
 		this.address = address;

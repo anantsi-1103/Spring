@@ -1,0 +1,11 @@
+package com.logic.javaConfig;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+//xml file 
+@Configuration
+@ComponentScan(basePackages = "")
+public class JavaConfig {
+
+}

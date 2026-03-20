@@ -6,7 +6,7 @@
 
 	<!-- bean definitions here -->
 
-	<bean class="com.logic.autowire.Address" name="address">
+	<bean class="com.logic.autowire.Address" name="address1">
 	
 		<property name="street" value="xyz"/>
 		<property name="city" value = "Delhi"/>
@@ -16,7 +16,8 @@
 
 	
 
-	<bean class="com.logic.autowire.Emp" name="emp" />
+	<bean class="com.logic.autowire.Emp" name="emp" autowire="constructor" />
+	
 	
 
 </beans>
