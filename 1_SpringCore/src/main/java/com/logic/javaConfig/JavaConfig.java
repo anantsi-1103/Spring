@@ -5,11 +5,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 //xml file 
-@Configuration
+@Configuration 
 @ComponentScan(basePackages = "com.logic.javaConfig")
 public class JavaConfig {
 	
-	@Bean
+	@Bean // target
 	public Samosa samosa(){
 		return new Samosa();
 	}
@@ -17,8 +17,8 @@ public class JavaConfig {
 	
 	
 	@Bean("ob")
-	public Student getStudent() {
-		Student student = new Student(samosa());
+	public Student getStudent() { // dependent
+		Student student = new Student(samosa()); // constructor 
 		return student;
 	}
 }
