@@ -28,9 +28,11 @@
 			<item value="com.logic"/>
 		</list>
 		<list key="groupId">
+			<item value="springCore"/>
 			<item value="spring-core"/>
 		</list>
 		<list key="artifactId">
+			<item value="2_SpringJDBC"/>
 			<item value="1_SpringCore"/>
 		</list>
 		<list key="projectNameTemplate">

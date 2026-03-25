@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-    <fullyQualifiedTypeName name="com.logic.Student"/>
     <fullyQualifiedTypeName name="jakarta.annotation.PreDestroy"/>
     <fullyQualifiedTypeName name="jakarta.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
@@ -9,7 +7,6 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.apache.catalina.core.ApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Configurable"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
@@ -21,4 +18,11 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.logic.javaConfig.Samosa"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="com.logic.Student"/>
+    <fullyQualifiedTypeName name="com.logic.dao.StudentDAO"/>
 </qualifiedTypeNameHistroy>
