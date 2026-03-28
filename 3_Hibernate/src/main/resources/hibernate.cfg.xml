@@ -45,6 +45,8 @@
 		<!-- Mapping Class -->
 
 		<mapping class="com.logic.entity.Student"/>
+		<mapping class="com.logic.entity.Department"/>
+		<mapping class="com.logic.entity.Course"/>
 		
 		
 
