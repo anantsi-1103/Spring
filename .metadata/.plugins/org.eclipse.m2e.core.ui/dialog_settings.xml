@@ -32,6 +32,7 @@
 			<item value="com.logic"/>
 		</list>
 		<list key="artifactId">
+			<item value="4_SpringORM"/>
 			<item value="3_Hibernate"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.google.protobuf.Empty;
 import com.logic.dao.StudentDAO;
 import com.logic.entites.Student;
 
@@ -35,5 +36,40 @@ public class App {
 		System.out.println("Press 4 For Delete Students");
 		System.out.println("Press 5 For Update Students");
 		System.out.println("Press 6 for Exit");
+		try {
+
+			System.out.println("Enter your Choice");
+			int inp = Integer.parseInt(br.readLine());
+
+			switch (inp) {
+			case 1:
+				// add new students
+
+				System.out.println("Enter user id");
+				int uID = Integer.parseInt(br.readLine());
+
+				System.out.println("Enter name");
+				String name = (br.readLine());
+
+				System.out.println("Enter city");
+				String city = (br.readLine());
+
+				Student s = new Student();
+
+				s.setStudentId(uID);
+				s.setStudentName(name);
+				s.setStudentCity(city);
+
+				int r = studentDAO.insert(s);
+
+				System.out.println("Data Inserted :  " + r);
+
+				break;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 }
