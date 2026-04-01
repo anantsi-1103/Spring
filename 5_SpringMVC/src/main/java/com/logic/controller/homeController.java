@@ -37,10 +37,14 @@ public class homeController {
 
 		ModelAndView modelAndView = new ModelAndView();
 
+//		key value pair
 		modelAndView.addObject("name", "Ajay");
 		modelAndView.addObject("id", 1234567);
 
+//		view resolver
 		modelAndView.setViewName("data");
+		
+//		data + viewResolver ki file ko sabko lekr jaa rha hai
 		return modelAndView;
 
 	}
