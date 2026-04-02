@@ -1,5 +1,6 @@
 package com.logic.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -7,10 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.logic.model.User;
+import com.logic.service.UserService;
 
 @Controller
 public class connectController {
 	
+	@Autowired
+	private UserService userService;
 	
 	@ModelAttribute
 	public void commanDataModel(Model m) {
@@ -31,6 +35,7 @@ public class connectController {
 	public String handleForm(@ModelAttribute User user, Model m) {
 
 		System.out.println("Inside Process Form");
+		this.userService.createUser(user);
 
 		System.out.println(user);
 		return "success";

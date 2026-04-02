@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class homeController {
 
 //	get mapping , post , put , delete, patch
-	@RequestMapping("/home")
+//	@RequestMapping("/home")
 	public String home() {
 		System.out.println("Url Understand Home Controller");
 		return "index";

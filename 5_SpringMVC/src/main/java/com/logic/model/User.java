@@ -1,6 +1,18 @@
 package com.logic.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "userTable")
 public class User {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String username;
 	private String email;
 	private String password;
@@ -29,16 +41,25 @@ public class User {
 		this.password = password;
 	}
 
-	@Override
-	public String toString() {
-		return "User [username=" + username + ", email=" + email + ", password=" + password + "]";
-	}
-
-	public User(String username, String email, String password) {
+	public User(int id, String username, String email, String password) {
 		super();
+		this.id = id;
 		this.username = username;
 		this.email = email;
 		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + "]";
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public User() {
